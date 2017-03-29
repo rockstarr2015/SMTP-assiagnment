@@ -1,0 +1,12 @@
+library(readxl)
+> hd_dataset_1_ <- read_excel("C:/Users/anike/Downloads/hd dataset (1).xls")
+> View(hd_dataset_1_)
+> hd_dataset_1_
+
+h20 <- hd_dataset_1_$Q1
+h20 <- hd_dataset_1_
+h20 <- h20[-1]
+h20 <- h20[-1]
+h20 <- gsub(",", "", h20)
+h20 <- as.numeric(h20)
+hist(h20)
